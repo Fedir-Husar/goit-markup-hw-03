@@ -25,13 +25,18 @@ body {
 }
 
 .container{
-    width: 1230px;
-    padding: 15px;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 5px solid tomato;
+   
 }
 
+
+ ul, h1, h2, h3, p {
+    margin: 0;
+}
 .main{
     line-height: 1.71;
 }
@@ -60,8 +65,29 @@ body {
 }
 
 /*   Стили хедера  */
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    align-self: flex-end;
+    height: 80px;
+
+    }
+
+.header-nav{
+    display: flex;
+}    
+.logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+  
+}
 .header-list {
     display: flex;
+    margin-left: 53px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -69,19 +95,26 @@ body {
   
 }
 .header-list .header-item{
-    margin-right: 40px;
+    margin-right: 50px;
+    height: 16px;
 
-    background-color: tomato;
+  
 }
 .header-list .header-item:last-child{
     margin-right: 0px;
 }
 
 .header-link-contakts {
+
     color: var(--text-color-first);
+    height: 16px;
+ 
 }
 
 .logo {
+    display: flex;
+    width: 145px;
+    height: 31px;
     color: var(--accent-color);
     font-family: var(--logo-font);
     font-weight: 700;
@@ -92,16 +125,28 @@ body {
 
 .logo-studio {
     color: var(--text-color-tittle);
-}
 
+}
+.list-techology{
+    display: flex;
+}
+.technology-item{
+    width: 270px;
+}
 /*   Стили футера  */
+.footer-logo{
+    padding-top: 60px;
+}
 .footer-address {
+    padding-top: 20px;
+    padding-bottom: 60px;
     color: var(--text-banner-color);
     font-style: normal;
     line-height: 1.71;
 }
 
 .footer-link {
+    display: inline-block;
     color: var(--text-color-footer);
 }
 
@@ -110,26 +155,99 @@ body {
 }
 /*   Стили main  */
 .banner-title{
-margin-top: 0;
-margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+padding-top: 200px;
+padding-bottom: 30px;
 }
-
 .banner-button {
+    display: block;
     font-family: var(--first-font);
     color: var(--text-banner-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
+.banner{
+    padding-bottom: 280px;
+}
 .title {
     color: var(--text-color-tittle);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
 }
+.list-techology{
+    padding: 0;
+    justify-content: space-between;
+    height: 101px;
+    
+}
+.techology-item{
+    width: 270px;
+    
+}
+.technology-item:not(:first-child) {
+    margin-left: 30px;
+}
+.techology-item-title{
+    padding-bottom: 10px;
+}
 
+.techology{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.technology-title{
+    display: none;
+}
+
+  .works-list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 94px;
+  }
+
+  .works-title{
+    padding-bottom: 50px;
+    
+  }
+
+  .works-img, .team-img, .portfolio-img{
+    display: block;
+  }
+
+  .team{
+    background-color: var(--bakrnd-color-second);
+  }
+  .team-list{
+    display: flex;
+    padding-left: 0px;
+    padding-bottom: 94px;
+    justify-content: space-between;
+  }
+.team-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:first-child) {
+    margin-left: 30px;
+}
+  .team-title{
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 .team-title,
 .works-title {
     font-size: 36px;
@@ -138,14 +256,20 @@ margin-bottom: 0;
 }
 
 .team-worker-name {
+   
+    padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
+    text-align: center;
 }
 
 .team-worker-descr {
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.188;
+    text-align: center;
 }
 
 .banner-title {
@@ -160,20 +284,39 @@ margin-bottom: 0;
 
 /* Портфолио стили */
 .example-title {
+    padding-top: 20px;
     color: var(--text-color-tittle);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
+.portfolio-title{
+    display: none;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 16px;
+
+}
+
+
 
 .example-desc {
+    padding-top: 4px;
+    padding-bottom: 20px;
     color: var(--text-color-first);
     font-size: 16px;
     line-height: 1.86;
 }
 
+
 .portfolio-menu {
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
     font-family: var(--first-font);
     color: var(--text-color-tittle);
     font-weight: 500;
@@ -184,8 +327,25 @@ margin-bottom: 0;
     cursor: pointer;
 }
 
+.menu-item:not(:last-child) {
+    margin-right: 8px;
+}
 .portfolio-menu:hover,
 .portfolio-menu:focus {
     color: var(--text-banner-color);
     background-color: var(--accent-color);
+}
+
+.portfolio-list{
+    display: flex;
+    padding-left: 0px;
+    padding-top: 56px;
+    padding-bottom: 94px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.portfolio-item{
+    border: 1px solid var#EEEEEE;
 }
