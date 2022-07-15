@@ -65,6 +65,11 @@ body {
 }
 
 /*   Стили хедера  */
+.header-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .main-nav{
     display: flex;
     justify-content: space-around;
@@ -86,8 +91,6 @@ body {
 .header-list {
     display: flex;
     margin-left: 53px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -96,8 +99,7 @@ body {
 }
 .header-list .header-item{
     margin-right: 50px;
-    height: 16px;
-
+  
   
 }
 .header-list .header-item:last-child{
@@ -134,12 +136,18 @@ body {
     width: 270px;
 }
 /*   Стили футера  */
+.footer{
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
 .footer-logo{
-    padding-top: 60px;
+padding: 0;
+margin-bottom: 20px;
+
+
 }
 .footer-address {
-    padding-top: 20px;
-    padding-bottom: 60px;
     color: var(--text-banner-color);
     font-style: normal;
     line-height: 1.71;
@@ -157,8 +165,7 @@ body {
 .banner-title{
 margin-left: auto;
 margin-right: auto;
-padding-top: 200px;
-padding-bottom: 30px;
+margin-bottom: 30px;
 }
 .banner-button {
     display: block;
@@ -177,7 +184,8 @@ padding-bottom: 30px;
 }
 
 .banner{
-    padding-bottom: 280px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .title {
     color: var(--text-color-tittle);
@@ -199,7 +207,7 @@ padding-bottom: 30px;
     margin-left: 30px;
 }
 .techology-item-title{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .techology{
@@ -210,16 +218,20 @@ padding-bottom: 30px;
 .technology-title{
     display: none;
 }
+.works{
+
+padding-bottom: 94px;
+}
 
   .works-list{
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
-    padding-bottom: 94px;
+    
   }
 
   .works-title{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     
   }
 
@@ -229,11 +241,13 @@ padding-bottom: 30px;
 
   .team{
     background-color: var(--bakrnd-color-second);
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .team-list{
     display: flex;
     padding-left: 0px;
-    padding-bottom: 94px;
+  
     justify-content: space-between;
   }
 .team-item{
@@ -245,8 +259,8 @@ padding-bottom: 30px;
     margin-left: 30px;
 }
   .team-title{
-    padding-top: 94px;
-    padding-bottom: 50px;
+
+    margin-bottom: 50px;
   }
 .team-title,
 .works-title {
@@ -257,7 +271,7 @@ padding-bottom: 30px;
 
 .team-worker-name {
    
-    padding-top: 30px;
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -265,7 +279,7 @@ padding-bottom: 30px;
 }
 
 .team-worker-descr {
-    padding-top: 10px;
+    margin-top: 10px;
     padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.188;
@@ -283,8 +297,14 @@ padding-bottom: 30px;
 }
 
 /* Портфолио стили */
+.portfolio-header{
+    border: 1px solid #ECECEC;
+}
+.portfolio-works{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .example-title {
-    padding-top: 20px;
     color: var(--text-color-tittle);
     font-weight: 700;
     font-size: 18px;
@@ -297,16 +317,16 @@ padding-bottom: 30px;
 .menu-list{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
+}
+.portfolio-descript{
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 
 
-
 .example-desc {
-    padding-top: 4px;
-    padding-bottom: 20px;
     color: var(--text-color-first);
     font-size: 16px;
     line-height: 1.86;
@@ -339,13 +359,12 @@ padding-bottom: 30px;
 .portfolio-list{
     display: flex;
     padding-left: 0px;
-    padding-top: 56px;
-    padding-bottom: 94px;
+    margin-top: 50px;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
     align-content: space-between;
 }
 .portfolio-item{
-    border: 1px solid var#EEEEEE;
+   
 }
